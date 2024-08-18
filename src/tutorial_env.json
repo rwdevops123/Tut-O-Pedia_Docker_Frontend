@@ -1,0 +1,20 @@
+{
+  "activeServer": true,
+  "Heartbeat": {
+    "timeout": 1000
+  },
+  "Server": {
+    "URL": "ws://localhost:8080/ticker"
+  },
+  "REST": {
+    "protocol": "http",
+    "port": "8080",
+    "hostname": "localhost",
+    "prefix": "api"
+  },
+  "Logging": {
+    "active": false,
+    "timeout": 5000
+  },
+  "AWS": {}
+}
