@@ -1,15 +1,15 @@
 {
-  "activeServer": true,
+  "activeServer": false,
   "Heartbeat": {
     "timeout": 1000
   },
   "Server": {
-    "URL": "ws://localhost:8080/ticker"
+    "URL": "ws://backend:8080/ticker"
   },
   "REST": {
     "protocol": "http",
     "port": "8080",
-    "hostname": "localhost",
+    "hostname": "backend",
     "prefix": "api"
   },
   "Logging": {

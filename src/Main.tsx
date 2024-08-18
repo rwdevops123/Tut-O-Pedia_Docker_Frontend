@@ -19,8 +19,8 @@ import { DialogIds, dialogInfo } from "./enum/Dialogs";
 
 const Main = () => {
   const mainRef = useRef<any>();
-  // const [serverConnected, setServerConnected] = useState(false);
-  const [serverConnected, setServerConnected] = useState(true);
+  const [serverConnected, setServerConnected] = useState(false);
+  // const [serverConnected, setServerConnected] = useState(true);
 
   useEffect(() => {
     if (configData.activeServer) {
