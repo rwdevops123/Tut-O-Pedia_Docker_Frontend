@@ -22,6 +22,7 @@ const log = (
     const blob = new Blob([info + "\n"], { type: "text/plain" });
     data.push(blob);
     isAdded = true;
+    console.log(info);
   }
 };
 
