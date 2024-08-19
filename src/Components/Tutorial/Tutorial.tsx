@@ -355,7 +355,6 @@ const Tutorial = () => {
     file: File
   ): Promise<void> => {
     log("Tutorial", `Update tutorial ${JSON.stringify(values)}`);
-
     const tutorialsToUpdate = tutorials.current!.map((item) =>
       item.id === values.id
         ? {
