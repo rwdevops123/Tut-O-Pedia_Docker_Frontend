@@ -32,7 +32,7 @@ const updateTutorialREST = async (
 ): Promise<boolean> => {
   if (tutorial) {
     console.log("[RW] UPDATE = " + file);
-    if (file === undefined) {
+    if (file === undefined || file === null) {
       return await updateTutorial(tutorial!);
     }
 
