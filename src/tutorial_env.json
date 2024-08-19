@@ -13,7 +13,7 @@
     "prefix": "api"
   },
   "Logging": {
-    "active": true,
+    "active": false,
     "timeout": 5000
   },
   "AWS": {}

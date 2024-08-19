@@ -9,22 +9,22 @@ const log = (
   message: string,
   level: string = "INFO"
 ) => {
-  if (isActive) {
-    let moduleInfo: string = `[${module ? module : "general"}]::`;
-    let info =
-      moduleInfo +
-      new Date().toLocaleString() +
-      " : <" +
-      level +
-      "> : " +
-      message;
+  //  if (isActive) {
+  let moduleInfo: string = `[${module ? module : "general"}]::`;
+  let info =
+    moduleInfo +
+    new Date().toLocaleString() +
+    " : <" +
+    level +
+    "> : " +
+    message;
 
-    const blob = new Blob([info + "\n"], { type: "text/plain" });
-    data.push(blob);
-    isAdded = true;
+  const blob = new Blob([info + "\n"], { type: "text/plain" });
+  data.push(blob);
+  isAdded = true;
 
-    console.log(info);
-  }
+  console.log(info);
+  //  }
 };
 
 const loggerflush = () => {
