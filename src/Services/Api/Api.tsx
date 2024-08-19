@@ -96,7 +96,7 @@ const deleteTutorialById = async (id: number): Promise<boolean> => {
   let result: boolean = false;
   if (isActive) {
     await apiClient
-      .delete(`/tutorials/delete/${id}`)
+      .delete(`/tutorial/delete/${id}`)
       .then((response) => (result = true))
       .catch((err) =>
         log(
