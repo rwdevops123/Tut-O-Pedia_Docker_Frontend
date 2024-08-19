@@ -24,7 +24,7 @@ pipeline {
                 }
             }
             steps {
-                sh 'docker rmi $DOCKERHUB_DOMAIN/$IMAGE_NAME:$IMAGE_VERSION'
+                sh 'docker rmi -f $DOCKERHUB_DOMAIN/$IMAGE_NAME:$IMAGE_VERSION'
                 sh 'docker build . -t $DOCKERHUB_DOMAIN/$IMAGE_NAME:$IMAGE_VERSION'
             }
         }
