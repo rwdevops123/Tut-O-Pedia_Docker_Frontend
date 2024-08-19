@@ -208,6 +208,11 @@ const updateTutorialWithFile = async (
 
   const data = new FormData();
 
+  log(">>>>> >", tutorial.title, LogLevel.Error);
+  log(">>>>> >", tutorial.description, LogLevel.Error);
+  log(">>>>> >", tutorial.published.toString(), LogLevel.Error);
+  log(">>>>> >", file == null ? "EMPTY FILE" : file.toString(), LogLevel.Error);
+
   data.append("title", tutorial.title);
   data.append("description", tutorial.description);
   data.append("published", tutorial.published.toString());

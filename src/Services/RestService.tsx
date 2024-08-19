@@ -31,6 +31,7 @@ const updateTutorialREST = async (
   file: File
 ): Promise<boolean> => {
   if (tutorial) {
+    console.log("[RW] UPDATE = " + file);
     if (file === undefined) {
       return await updateTutorial(tutorial!);
     }
